@@ -18,7 +18,9 @@ public class BillingController {
 	private ContactService contactService;
 	@Autowired
 	private BillingService billingService;
-	
+	//bug no-130
+	int i=20
+	String name="raghunath hembram";
      @RequestMapping("/billingForm")
 	public String viewBillingForm(@RequestParam("contactId")long id,Model model) {
     	 Contacts contact = contactService.findContactById(id);
